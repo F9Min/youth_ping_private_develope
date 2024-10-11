@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캐치! 청년핑 로그인</title>
+    <style>
+        /* 기본 스타일 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 컨테이너 스타일 */
+        .container {
+            width: 350px;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        /* 제목 스타일 */
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* 탭 메뉴 스타일 */
+        .tab-menu {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .tab-menu button {
+            flex: 1;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #f4f4f4;
+            border: none;
+            border-radius: 12px 12px 0 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .tab-menu button.active {
+            background-color: #d9d9f3;
+            font-weight: bold;
+        }
+
+        /* 로그인 폼 스타일 */
+        .login-form {
+            text-align: left;
+        }
+
+        .login-form input[type="text"], .login-form input[type="password"] {
+            width: calc(100% - 24px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .login-form input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to right, #b4a0ff, #a0c4ff);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background: linear-gradient(to right, #a0c4ff, #b4a0ff);
+        }
+
+        /* 링크 스타일 */
+        .links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 제목 -->
+        <div class="title">캐치! 청년핑</div>
+
+        <!-- 탭 메뉴 -->
+        <div class="tab-menu">
+            <button class="active">ID/전화번호</button>
+            <button>일회용번호</button>
+            <button>QR 코드</button>
+        </div>
+
+        <!-- 로그인 폼 -->
+        <div class="login-form">
+            <form>
+                <input type="text" placeholder="아이디 또는 전화번호" required>
+                <input type="password" placeholder="비밀번호" required>
+                <div>
+                    <input type="checkbox" id="keep-login">
+                    <label for="keep-login">로그인 유지</label>
+                </div>
+                <button type="submit">로그인</button>
+            </form>
+        </div>
+
+        <!-- 하단 링크 -->
+        <div class="links">
+            <a href="#">아이디 찾기</a>
+            <a href="#">비밀번호 찾기</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+</body>
+</html>
